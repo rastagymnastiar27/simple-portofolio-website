@@ -506,7 +506,7 @@ body {
     resize: none;
 }
 
-.contact-form #submit {
+.submit {
     display: inline-block;
     padding: 1rem 2rem; /* Padding in rem */
     margin-top: 3vh; /* Margin using viewport height */
@@ -520,7 +520,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.contact-form #submit:hover {
+.submit:hover {
     border-radius: 0.5rem;
     background-color: black;
     color: white;
@@ -805,6 +805,11 @@ body {
 
     .contact-form {
         max-width: 100vw;
+    }
+
+    .submit {
+        padding: 0.8rem 1rem;
+        font-size: var(--font-size-xxs);
     }
 
     .social-media ul {
@@ -1105,6 +1110,11 @@ body {
 
     .contact-form {
         max-width: 100vw;
+    }
+
+    .submit {
+        padding: 1rem 1.2rem;
+        font-size: var(--font-size-ss);
     }
 
     .back-home a,
