@@ -123,9 +123,9 @@ body {
     box-shadow: 0.1rem 0.2rem var(--bg-color);
     transition: background-color 0.3s, box-shadow 0.3s;
     margin: 1.5rem 0;
-    padding: 1rem 0;
-    width: 6vw;
-    font-size: var(--font-size-sm);
+    padding: 1.4rem 0;
+    width: 10vw;
+    font-size: var(--font-size-xs);
     cursor: pointer;
     font-weight: 600;
 }
@@ -635,7 +635,7 @@ body {
         position: relative; /* Parent element for absolute positioning */
         background: var(--bg-color);
         padding: 0;
-        height: 80vh; /* Ensure full viewport height */
+        height: 100vh; /* Ensure full viewport height */
         display: flex;
         flex-direction: column; /* Flex to stack content vertically */
     }
@@ -654,6 +654,7 @@ body {
         padding: 2rem;
         background: linear-gradient(10deg, rgba(0, 0, 0, 0.6) 75%, transparent 50%);
         text-align: left;
+        z-index: 10; /* Ensure it's above other elements */
     }
     
     
@@ -891,6 +892,7 @@ body {
         height: 50%;
         background: linear-gradient(10deg, rgba(0, 0, 0, 0.6) 60%, transparent 50%);
         text-align: left;
+        z-index: 10; /* Ensure it's above other elements */
     }
     
     
@@ -917,7 +919,7 @@ body {
     .left-section button {
         color: var(--bg-color);
         bottom: 0;
-        width: 20vw;
+        width: 25vw;
         padding: 1.5rem 0;
         font-size: var(--font-size-s);
         margin: 0;

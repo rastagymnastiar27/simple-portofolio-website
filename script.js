@@ -44,7 +44,7 @@ const observer = new IntersectionObserver(entries => {
 // Select all target elements for observation
 const elementsToObserve = document.querySelectorAll(`
     .navbar a, .navbar-toggler, .left-section, .left-section h1, .left-section h2, 
-    .left-section h3, .left-section button, .right-section img, .details h3, .details p, .container, 
+    .left-section h3, .left-section button, .right-section img, .details h3, .details p, 
     .section, .section-title, .section-content-about, .task-section div, section-content-skill, 
     .skills-section div, .divider, .portofolio-title, .page a, .portfolio .content .item, .portfolio 
     .certificate-content .item, .show-more button, .contact-form input, .contact-form textarea, 
