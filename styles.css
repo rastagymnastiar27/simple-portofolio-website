@@ -16,10 +16,12 @@
 
     --font-size-xxl: 5rem;     /* 80px */
     --font-size-xl: 2.5rem;    /* 40px */
+    --font-size-l: 2.3rem;    /* 40px */
     --font-size-lg: 1.875rem;  /* 30px */
     --font-size-md: 1.5625rem; /* 25px */
     --font-size-sm: 1.0625rem; /* 17px */
     --font-size-s: 1.3rem;
+    --font-size-ss: 1rem;
     --font-size-xs: 0.9375rem; /* 15px */
     --font-size-xxs: 0.75rem;
 }
@@ -662,28 +664,28 @@ body {
     .left-section h1 {
         color: var(--paragraph-color); /* Ensure text is visible */
         margin: 0.5vh 0;
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-l);
     }
 
     .left-section h2 {
         color: var(--paragraph-color); /* Ensure text is visible */
         margin-top: 4vh;
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-s);
     }
 
     .left-section h3 {
         color: var(--paragraph-color); /* Ensure text is visible */
         margin: 0;
         margin-bottom: 2vh;
-        font-size: var(--font-size-xxs);
+        font-size: var(--font-size-ss);
     }
 
     .left-section button {
         color: var(--bg-color);
         bottom: 0;
-        width: 25vw;
-        padding: 0.5rem 0;
-        font-size: var(--font-size-xs);
+        width: 28vw;
+        padding: 0.8rem 0;
+        font-size: var(--font-size-xxs);
         margin: 0;
     }
 
@@ -732,10 +734,12 @@ body {
         margin: 0;
     }
     .task-section div h3{
+        font-size: var(--font-size-s);
         padding-left: 0;
     }
 
     .task-section div p{
+        font-size: var(--font-size-xs);
         padding-left: 0;
         text-align: justify;
     }
@@ -800,6 +804,7 @@ body {
     }
 
     .social-media ul {
+        margin: 3rem 0;
         gap: 10vw;
     }
 }
@@ -919,9 +924,9 @@ body {
     .left-section button {
         color: var(--bg-color);
         bottom: 0;
-        width: 25vw;
+        width: 20vw;
         padding: 1.5rem 0;
-        font-size: var(--font-size-s);
+        font-size: var(--font-size-xs);
         margin: 0;
     }
 
