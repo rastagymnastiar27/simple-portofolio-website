@@ -126,7 +126,7 @@ body {
     transition: background-color 0.3s, box-shadow 0.3s;
     margin: 1.5rem 0;
     padding: 1.4rem 0;
-    width: 10vw;
+    width: 9vw;
     font-size: var(--font-size-xs);
     cursor: pointer;
     font-weight: 600;
@@ -446,10 +446,14 @@ body {
 }
 
 .portofolio-footer {
-    font-size: var(--font-size-sm);
     text-align: center;
     padding: 2rem;
     background-color: var(--accent-color);
+}
+
+.portofolio-footer h2 {
+    font-size: var(--font-size-s);
+    font-weight: 400;
     color: var(--paragraph-color);
 }
 
