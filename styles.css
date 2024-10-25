@@ -991,7 +991,7 @@ body {
     }
 
     .task-section div:nth-child(3) {
-        max-width: 100%;
+        max-width: 50%;
     }
     
     .section-content-skill h3 {
