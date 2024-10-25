@@ -182,7 +182,7 @@ body {
     font-size: var(--font-size-lg);
     font-weight: bold;
     padding: 0.625rem 2.25rem;
-    border: 0.3rem solid #000;
+    border: 0.7rem solid #000;
     display: flex;
     letter-spacing: 0.5rem;
     margin: 3rem auto; /* Center it horizontally and add margin at the bottom */
@@ -324,7 +324,7 @@ body {
     font-weight: bold;
     color: var(--bg-color);
     letter-spacing: 1.2rem;
-    border: 0.4rem solid var(--bg-color);
+    border: 0.7rem solid var(--bg-color);
     padding: 0.625rem 1.25rem;
 }
 
