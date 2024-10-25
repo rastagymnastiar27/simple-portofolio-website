@@ -43,12 +43,12 @@ const observer = new IntersectionObserver(entries => {
 
 // Select all target elements for observation
 const elementsToObserve = document.querySelectorAll(`
-    .navbar, .navbar a, .navbar-toggler, .left-section, .left-section h1, .left-section h2, 
+    .left-section, .left-section h1, .left-section h2, 
     .left-section h3, .left-section button, .right-section img, .details h3, .details p, 
     .section, .section-title, .section-content-about, .task-section div, section-content-skill, 
     .skills-section div, .divider, .portofolio-title, .page a, .portfolio .content .item, .portfolio 
     .certificate-content .item, .show-more button, .portofolio-footer h2, .contact-form input, .contact-form textarea, 
-    .social-media ul li a, #learning, #other-skills, .contact-form .submit, .back-home, .credit
+    .social-media ul li a, #learning, #other-skills, .back-home, .credit, #submit
 `);
 
 elementsToObserve.forEach(element => {
