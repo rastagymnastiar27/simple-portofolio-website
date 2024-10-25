@@ -11,6 +11,58 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    const navbarNav = document.querySelector('.navbar nav');
+    
+    // If the navbar is currently shown
+    if (navbarNav.classList.contains('show')) {
+        // Start closing the navbar
+        navbarNav.classList.remove('show');
+        
+        // Wait for the CSS transition to complete before hiding
+        setTimeout(() => {
+            navbarNav.style.visibility = 'hidden'; // Hide after animation
+            navbarNav.style.pointerEvents = 'none'; // Disable pointer events
+        }, 300); // Match this duration with the CSS transition time
+    } else {
+        // If it is hidden, show it immediately
+        navbarNav.style.visibility = 'visible'; // Make visible first
+        navbarNav.classList.add('show'); // Add class to show
+        navbarNav.style.pointerEvents = 'auto'; // Enable pointer events
+    }
+});
+
+// Set up Intersection Observer
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-up-scale'); // Trigger animation
+        }
+    });
+}, { threshold: 0.1 }); // Start animation when 10% of element is visible
+
+// Select all target elements for observation
+const elementsToObserve = document.querySelectorAll(`
+    .navbar a, .navbar-toggler, .left-section, .left-section h1, .left-section h2, 
+    .left-section h3, .left-section button, .right-section img, .details h3, .details p, .container, 
+    .section, .section-title, .section-content-about, .task-section div, section-content-skill, 
+    .skills-section div, .divider, .portofolio-title, .page a, .portfolio .content .item, .portfolio 
+    .certificate-content .item, .show-more button, .contact-form input, .contact-form textarea, 
+    .social-media ul li a, #learning, #other-skills
+`);
+
+// Initially show the logo and hide others
+const logo = document.querySelector('.logo');
+logo.classList.remove('hidden'); // Ensure logo is visible on load
+
+elementsToObserve.forEach(element => {
+    element.classList.add('hidden'); // Initially hidden for all except logo
+    observer.observe(element); // Observe each element
+});
+
+
+
+
 function showSection(section) {
     // Get references to the sections
     var certificateSection = document.getElementById('certificate-section');

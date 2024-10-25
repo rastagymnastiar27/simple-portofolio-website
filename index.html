@@ -21,11 +21,12 @@
     <!-- Header Section-->
     <header id="header" class="navbar">
         <div class="logo">Rasta Personal Website</div>
+        <button class="navbar-toggler" aria-label="Toggle navigation">&#9776;</button> <!-- Hamburger Icon -->
         <nav>
             <a href="#about">About me</a>
             <a href="#skills">Skills</a>
             <a href="#portofolio">Portfolio</a>
-            <a class="contact" href="#contact">CONTACT ME</a>
+            <a href="#contact" class="contact">CONTACT ME</a>
         </nav>
     </header>
     <!-- Main Section-->
@@ -33,9 +34,9 @@
         <!-- Header Section-->    
         <div id="home" class="home-content">
             <section class="left-section">
-                <h2>Hi, I am</h2>
+                <h2>Hi, I'am</h2>
                 <h1>Rasta Gymnastiar</h1>
-                <h3>Web Developer | Software Engineer</h3>
+                <h3>Web Developer | Software Developer</h3>
                 <button>Resume</button>
             </section>
             <section class="right-section">
@@ -63,7 +64,9 @@
                     <p>Very organized person, always comfortable learning new things, always practicing, problem solver, Football fan, Outdoor Activity, Extrovert person, interactive. I'm looking to collaborate with great team and work on ambitious projects with a positive team.</p>
                 </div>
             </div>
-            <div class="divider">✦✦✦</div>
+            <div class="divider">
+                <img src="assets/logo/divider.png"/>
+            </div>
             <div class="section">
                 <div class="task-section">
                     <div>
@@ -80,7 +83,9 @@
                     </div>
                 </div>
             </div>
-            <div class="divider">✦✦✦</div>
+            <div class="divider">
+                <img src="assets/logo/divider.png"/>
+            </div>
             <!-- Skill Section-->     
             <div id="skills" class="section">
                 <div class="section-title">SKILLS</div>
@@ -120,7 +125,7 @@
                             <p>FIGMA</p>
                         </div>
                     </div>
-                    <h3>LEARNING:</h3>
+                    <h3 id="learning">LEARNING:</h3>
                     <div class="skills-section">
                         <div>
                             <img src="/assets/logo/node.svg" alt="NodeJS logo"/>
@@ -143,7 +148,7 @@
                             <p>PYTHON</p>
                         </div>
                     </div>
-                    <h3>OTHER SKILLS:</h3>
+                    <h3 id="other-skills">OTHER SKILLS:</h3>
                     <div class="skills-section">
                         <div>
                             <img src="/assets/logo/england.svg" alt="English B2 logo"/>
@@ -289,15 +294,17 @@
         <!-- Contact Section--> 
         <div id="contact" class="contact">
             <div class="section">
-                <div class="section-title">CONTACT</div>
+                <div id="contact-section" class="section-title">CONTACT</div>
                 <div class="section-content-contact">
-                    <p>Let me know if you are interested in what I’m working on and what I aim to achieve. I believe I can be a valuable asset to you, just as you can be a beneficial platform for me. You can find my contact information and social media below. I hope we can become partners soon. Thanks!</p>
+                    <p>Let me know if you are interested in what I’m working on and what I aim to achieve. I believe I can be a valuable asset to you, just as you can be a beneficial platform for me. You can find my contact information and social media below.<br><br>I hope we can become partners soon. Thanks!</p>
                 </div>
             </div>
 
-            <div class="divider">✦✦✦</div>
+            <div class="divider">
+                <img src="assets/logo/divider.png"/>
+            </div>
 
-            <form class="contact-form">
+            <form id="contact-form" class="contact-form">
                 <input id="name" type="text" name="name" placeholder="ENTER YOUR NAME*" required>
                 <input id="email" type="email" name="email" placeholder="ENTER YOUR EMAIL*" required>
                 <input id="phone" type="tel" name="phone" placeholder="PHONE NUMBER" pattern="[0-9]{13}" required>
