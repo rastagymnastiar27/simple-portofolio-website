@@ -1,6 +1,6 @@
 {
   "name": "portofolio-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A personal portfolio website showcasing projects and skills.",
   "main": "script.js",
   "scripts": {
