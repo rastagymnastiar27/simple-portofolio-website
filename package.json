@@ -1,0 +1,23 @@
+{
+  "name": "portofolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rastagymnastiar27/simple-portofolio-website.git"
+  },
+  "keywords": [
+    "portofolio",
+    "website"
+  ],
+  "author": "rasta gymnastiar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rastagymnastiar27/simple-portofolio-website/issues"
+  },
+  "homepage": "https://github.com/rastagymnastiar27/simple-portofolio-website#readme"
+}
