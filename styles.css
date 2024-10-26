@@ -506,8 +506,9 @@ body {
     resize: none;
 }
 
-.submit {
+.contact-form button {
     display: inline-block;
+    background-color: transparent;
     padding: 1rem 2rem; /* Padding in rem */
     margin-top: 3vh; /* Margin using viewport height */
     border: none;
@@ -520,7 +521,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.submit:hover {
+.contact-form button:hover {
     border-radius: 0.5rem;
     background-color: black;
     color: white;
@@ -572,6 +573,10 @@ body {
     font-family: sans-serif;
     font-weight: 400;
     font-size: var(--font-size-sm);
+}
+
+body.swal2-shown {
+    overflow: auto;
 }
 
 @media (max-width: 768px) {
@@ -807,7 +812,8 @@ body {
         max-width: 100vw;
     }
 
-    .submit {
+    .contact-form button {
+        color: var(--bg-color);
         padding: 0.8rem 1rem;
         font-size: var(--font-size-xxs);
     }
@@ -1112,7 +1118,8 @@ body {
         max-width: 100vw;
     }
 
-    .submit {
+    .contact-form button {
+        color: var(--bg-color);
         padding: 1rem 1.2rem;
         font-size: var(--font-size-ss);
     }

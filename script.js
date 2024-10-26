@@ -32,6 +32,78 @@ document.querySelector('.navbar-toggler').addEventListener('click', function() {
     }
 });
 
+// SweetAlert
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const formObject = {};
+    formData.forEach((value, key) => (formObject[key] = value));
+
+    // Debugging: Log form data before the fetch
+    console.log('Form data:', formObject);
+
+    fetch('https://rasta-personal-website.vercel.app/api/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formObject),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to submit the form');
+        }
+        return response.text();
+    })
+    .then(message => {
+        console.log('Fetch success:', message);
+        Swal.fire({
+            title: 'Success!',
+            text: 'Your message was sent successfully.',
+            icon: 'success',
+            backdrop: true,
+            showConfirmButton: true,
+            willOpen: () => {
+                const scrollY = window.scrollY;
+                document.body.style.position = 'fixed';
+                document.body.style.top = `-${scrollY}px`;
+                document.body.style.left = '0';
+                document.body.style.right = '0';
+                document.body.style.width = '100%';
+            },
+            willClose: () => {
+                const scrollY = document.body.style.top;
+                document.body.style.position = '';
+                document.body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Fetch error:', error);
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'There was an error sending your message. Please try again later.',
+            backdrop: true,
+            showConfirmButton: true,
+            willOpen: () => {
+                const scrollY = window.scrollY;
+                document.body.style.position = 'fixed';
+                document.body.style.top = `-${scrollY}px`;
+                document.body.style.width = '100%';
+            },
+            willClose: () => {
+                const scrollY = document.body.style.top;
+                document.body.style.position = '';
+                document.body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
+        });
+    });
+});
+
 // Set up Intersection Observer
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
