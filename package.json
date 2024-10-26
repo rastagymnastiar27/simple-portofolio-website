@@ -1,9 +1,10 @@
 {
-  "name": "simple-portofolio-website",
+  "name": "portofolio-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "A personal portfolio website showcasing projects and skills.",
   "main": "script.js",
   "scripts": {
+    "start": "node script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,10 +12,12 @@
     "url": "git+https://github.com/rastagymnastiar27/simple-portofolio-website.git"
   },
   "keywords": [
-    "portofolio",
-    "website"
+    "portfolio",
+    "website",
+    "frontend",
+    "projects"
   ],
-  "author": "rasta gymnastiar",
+  "author": "Rasta Gymnastiar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rastagymnastiar27/simple-portofolio-website/issues"
