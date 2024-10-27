@@ -2,12 +2,6 @@
     "functions": {
         "api/*.go": {
         "runtime": "vercel-go@3.2.0"
-    }
-    },
-    "routes": [
-        {
-        "src": "/api/submit",
-        "dest": "api/submit.go"
         }
-    ]
+    }
 }
