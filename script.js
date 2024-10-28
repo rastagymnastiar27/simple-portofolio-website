@@ -32,7 +32,7 @@ document.querySelector('.navbar-toggler').addEventListener('click', function() {
     }
 });
 
-// SweetAlert
+//Sweet Alert
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -40,24 +40,23 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const formObject = {};
     formData.forEach((value, key) => (formObject[key] = value));
 
-    // Debugging: Log form data before the fetch
     console.log('Form data:', formObject);
 
-    fetch('https://rasta-personal-website.vercel.app/api/submit', {
+    fetch('/.netlify/functions/sendEmail', {  // Update the endpoint to point to your function
         method: 'POST',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Type': 'application/json',
         },
-        body: new URLSearchParams(formObject),
+        body: JSON.stringify(formObject),  // Convert form object to JSON
     })
     .then(response => {
         if (!response.ok) {
             throw new Error('Failed to submit the form');
         }
-        return response.text();
+        return response.json();  // Parse JSON response
     })
-    .then(message => {
-        console.log('Fetch success:', message);
+    .then(data => {
+        console.log('Fetch success:', data);
         Swal.fire({
             title: 'Success!',
             text: 'Your message was sent successfully.',
@@ -103,6 +102,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         });
     });
 });
+
 
 // Set up Intersection Observer
 const observer = new IntersectionObserver(entries => {
