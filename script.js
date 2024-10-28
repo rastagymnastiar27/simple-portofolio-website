@@ -32,6 +32,7 @@ document.querySelector('.navbar-toggler').addEventListener('click', function() {
     }
 });
 
+
 //Sweet Alert
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
