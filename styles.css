@@ -348,8 +348,13 @@ body {
 }
 
 .page a.active {
-    color: white;
-    border-bottom: 0.125rem solid white;
+    color: var(--paragraph-color);
+    border-bottom: 0.125rem solid var(--paragraph-color);
+}
+
+.page a:hover {
+    color: var(--paragraph-color);
+    border-bottom: 0.125rem solid var(--paragraph-color);
 }
 
 .portfolio {
@@ -444,6 +449,10 @@ body {
     padding: 0.1rem 2rem;
     cursor: pointer;
     font-size: var(--font-size-sm);
+}
+
+.show-more button:hover {
+    color: var(--button-color);
 }
 
 .portofolio-footer {
@@ -549,6 +558,10 @@ body {
 
 .back-home a i {
     margin-bottom: 1rem;
+}
+
+.back-home a:hover {
+    color: var(--button-color);
 }
 
 .social-media ul {
