@@ -309,13 +309,14 @@
                 <img src="assets/logo/divider.png"/>
             </div>
 
-            <form id="contact-form" class="contact-form">
+            <form id="contact-form" class="contact-form" method="POST" action="/.netlify/functions/send-email">
                 <input id="name" type="text" name="name" placeholder="ENTER YOUR NAME*" required>
                 <input id="email" type="email" name="email" placeholder="ENTER YOUR EMAIL*" required>
                 <input id="subject" type="text" name="subject" placeholder="ENTER YOUR SUBJECT*" required>
                 <textarea id="message" name="message" placeholder="YOUR MESSAGE" required></textarea>
                 <button id="submit" class="submit">SUBMIT</button>
             </form>
+            
         </div>
         <!-- Footer Section-->
         <footer id="footer" class="footer">
