@@ -35,7 +35,7 @@ body {
 
 .hidden {
     opacity: 0;
-    transform: translateY(50px) scale(0.8); /* Start from below and slightly smaller */
+        transform: translateY(50px) scale(0.8); /* Start from below and slightly smaller */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -842,7 +842,7 @@ body.swal2-shown {
 
 @media (min-width: 768px) and (max-width:1024px) {
     .navbar {
-        padding: 3rem 2rem;
+        padding: 2.5rem 2rem;
         font-size: var(--font-size-s);
     }
     .logo {
@@ -852,11 +852,10 @@ body.swal2-shown {
     }
     
     .navbar nav {
-        z-index: 999;
         display: flex; /* Use flex to arrange items in a column */
         flex-direction: column;
-        position: absolute;
-        top: 10%;
+        position: fixed;
+        top: 8%;
         right: 0;
         background-color: rgba(0, 0, 0, 1);
         border-top-left-radius: 1rem;
@@ -865,7 +864,7 @@ body.swal2-shown {
         text-align: center;
         padding: 0;
         opacity: 0; /* Initially hidden */
-        transform: translateY(-20px); /* Slightly move it up */
+        transform: translateY(-10px); /* Slightly move it up */
         transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
         visibility: hidden; /* Prevent interaction when hidden */
         pointer-events: none; /* Disable pointer events when hidden */
