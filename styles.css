@@ -420,6 +420,15 @@ body {
     text-align: center;
 }
 
+/* Add margin-top to the a element */
+.portfolio .content .item .overlay a {
+    color: var(--paragraph-color);
+    font-size: var(--font-size-md);
+    margin-top: 1rem; /* Set the margin-top to 1rem */
+    /* Add display block to ensure margin is applied correctly */
+    display: block; 
+}
+
 .slide-out-left {
     transform: translateX(-100%); /* Slide out to the left */
     opacity: 0;
@@ -819,6 +828,14 @@ body.swal2-shown {
         margin: 2rem;
         position: relative;
     }
+
+    .portfolio .content .item .overlay .text {
+        font-size: var(--font-size-s);
+    }
+    
+    /* Add margin-top to the a element */
+    .portfolio .content .item .overlay a {
+        font-size: var(--font-size-sm);
 
     .section-content-contact {
         text-align: justify;
