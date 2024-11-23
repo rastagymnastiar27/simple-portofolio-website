@@ -65,17 +65,17 @@ body {
     color: var(--paragraph-color);
 }
 
-.navbar a {
+.navbar nav a {
     color: var(--paragraph-color);
     text-decoration: none;
     margin-left: 4rem;
 }
 
-.navbar a:hover {
+.navbar nav a:hover {
     color: var(--text-color);
 }
 
-.navbar a.contact {
+.navbar nav a.contact {
     background-color: var(--paragraph-color);
     color: var(--bg-color);
     padding: 0.625rem 1.25rem;
@@ -83,7 +83,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.navbar a.contact:hover {
+.navbar nav a.contact:hover {
     background-color: var(--bg-color);
     color: var(--paragraph-color);
 }
@@ -651,7 +651,7 @@ body.swal2-shown {
         display: block;
     }
 
-    .navbar a.contact {
+    .navbar nav a.contact {
         background: none;
         color: var(--paragraph-color);
         padding: 0;
@@ -904,7 +904,7 @@ body.swal2-shown {
         font-size: var(--font-size-xl);
     }
 
-    .navbar a.contact {
+    .navbar nav a.contact {
         background: none;
         color: var(--paragraph-color);
         padding: 0;
