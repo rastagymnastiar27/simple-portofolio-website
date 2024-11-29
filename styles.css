@@ -422,11 +422,12 @@ body {
 
 /* Add margin-top to the a element */
 .portfolio .content .item .overlay a {
+    padding: 1rem 0.5rem;
     color: var(--paragraph-color);
     font-size: var(--font-size-md);
     margin-top: 1rem; /* Set the margin-top to 1rem */
     /* Add display block to ensure margin is applied correctly */
-    display: block; 
+    display: inline-block; 
 }
 
 .slide-out-left {
